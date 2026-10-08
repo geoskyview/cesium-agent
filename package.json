@@ -1,0 +1,25 @@
+{
+  "name": "aiearth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AIEarth - 用自然语言驱动的 Cesium 三维地球 Agent（前后端分离）",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix server run start",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix web run typecheck",
+    "postinstall": "echo [aiearth] 依赖安装完成"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

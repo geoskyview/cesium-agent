@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIEarth · 自然语言驱动的三维地球</title>
+    <script>
+      // Cesium 静态资源根（Workers / Assets / Widgets 由 vite 静态拷贝到 /cesium/）
+      window.CESIUM_BASE_URL = '/cesium/';
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="cesium-container">
+        <div id="loading-mask"><div class="spinner"></div><span>三维地球加载中…</span></div>
+      </div>
+      <aside id="chat-panel"></aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

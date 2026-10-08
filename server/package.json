@@ -1,0 +1,27 @@
+{
+  "name": "@aiearth/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AIEarth Agent 服务端：DeepSeek LLM 编排 + 工具调度 + 会话管理",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke-agent.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.104.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3"
+  }
+}
