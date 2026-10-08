@@ -89,6 +89,10 @@ npm run dev
 # 4) 打开 http://localhost:5173
 ```
 
+启动后主界面如下：
+
+![AIEarth 主界面截图](home.jpg)
+
 生产形态：`npm run build` 产出 `web/dist`，后端会自动托管它，直接访问 `http://localhost:8787`。
 
 ### 停止服务
@@ -278,7 +282,3 @@ LLM_API_KEY=sk-xxxx
 - 底图/地形走 ArcGIS 在线服务，国内网络不通时影像会空白、地形会自动回退到椭球体（控制台有日志）。
 - 地名词典是内置的精简版，冷门地名查不到时模型会用自己的地理知识给近似坐标（回复里会说明）。后续可换成高德/天地图 Web 服务（在 `server/src/tools/geo.ts` 里替换实现即可）。
 - 未使用 Cesium ion，不需要 ion token。
-
----
-
-本项目仅本地运行，未做任何公网发布。
