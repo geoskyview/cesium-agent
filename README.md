@@ -121,9 +121,6 @@ curl -s -m 4 -o /dev/null -w "%{http_code}\n" http://127.0.0.1:5173/
 
 ## 四、已实现的能力（32 个工具）
 
-能力移植自 [cesium-mcp](https://github.com/gaopengbin/cesium-mcp)（59 个 Cesium MCP 工具），
-命名统一为 snake_case；领域知识来自官方 [cesiumjs-skills](https://github.com/CesiumGS/cesiumjs-skills)。
-
 ### 核心 core
 | 工具 | 位置 | 说明 |
 | --- | --- | --- |
